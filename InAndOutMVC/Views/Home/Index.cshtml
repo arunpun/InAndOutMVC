@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home - ";
+}
+
+<div class="container col-xxl-8 px-4 py-5 mb-lg-0 mb-md-4 mb-sm-5">
+    <div class="row g-5 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 order-last order-lg-first">
+            <h1 class="display-5 fw-bold lh-1 mb-3">InAndOut: A Coding Project</h1>
+            <h4 class="lead">
+                Keep track of borrowed and lent items as well as plan your expenses. This project implements the MVC design pattern to solve the problem using the C# language. With the
+                help of SQL server you can store data and perform CRUD operations.
+            </h4>
+            <ul class="fa-ul pt-2 checklist">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>HTML5</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap Layout</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>MVC Design Pattern</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>NuGet Package Manager</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Fundamentals</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Statements, Expressions & Operators</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Object Oriented Programming</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Methods, Dependency Injection, Interfaces</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SQL Server, Migration & DbContext</li>
+            </ul>
+            <div>
+                <a type="button" class="button btn btn-outline-dark btn-lg px-4 me-md-2" asp-controller="Item" asp-action="Index" id="appPage">
+                    Try It
+                    Out!
+                </a>
+            </div>
+            <div class="d-flex mt-5">
+                <div class="row">
+                    <div class="col"><i class="fab fa-html5 fa-4x html5icon"></i></div>
+                    <div class="col"><i class="fab fa-css3-alt fa-4x cssicon"></i></div>
+                    <div class="col"><i class="fab fa-bootstrap fa-4x bsicon"></i></div>
+                    <div class="col"><img src="/img/csharp.png" width="60" height="60" /></div>
+                    <div class="col"><img src="/img/dotnet.svg" width="60" height="60" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 align-self-center order-md-first order-sm-first">
+            <img src="./img/vector/inandout.svg" class="img-fluid center-block d-block" alt="In And Out Logo" width="700" height="500">
+        </div>
+    </div>
+</div>
