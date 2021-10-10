@@ -17,5 +17,7 @@ namespace InAndOutMVC.Data
 
         //Create an entity, dbset of Item to hold items
         public DbSet<Item> Items { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
+
     }
 }

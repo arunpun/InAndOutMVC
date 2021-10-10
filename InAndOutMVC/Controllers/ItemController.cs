@@ -26,5 +26,23 @@ namespace InAndOutMVC.Controllers
 
             return View(objList);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        //Create POST action
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Create(Item obj)
+        {
+            //Make entry to the database and save changes
+            _db.Items.Add(obj);
+            _db.SaveChanges();
+
+            //Redirect user to index page
+            return RedirectToAction("Index");
+        }
     }
 }
