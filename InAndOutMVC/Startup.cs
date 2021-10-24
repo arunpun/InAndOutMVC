@@ -27,7 +27,7 @@ namespace InAndOutMVC
         {
             //Configure app to use ApplicationDbContext and use the connection string
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(DataUtility.GetConnectionString(Configuration)));
 
             services.AddControllersWithViews();
         }
